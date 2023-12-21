@@ -6,7 +6,7 @@ Tento skript vytváří náhodně generovaný text ve stylu Lorem Ipsum v češt
 
 1. Spusťte skript v Pythonu (verze 3.x):
     ```
-    python lorem_ipsum_generator.py
+    python lorem_ipsum_generator_Dostál.py
     ```
 
 2. Zadejte počet odstavců a počet slov na odstavec, když je to požadováno.
