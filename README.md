@@ -1,33 +1,26 @@
-# Lorem_Ipsum_Generator
-# Generátor Lorem Ipsum v Pythonu
+## Generátor Lorem Ipsum
 
-Tento skript vytváří náhodně generovaný text ve stylu Lorem Ipsum v češtině. Text je generován na základě váhy jednotlivých písmen, které jsou určeny na základě četnosti v českém jazyce.
+Tento program generuje náhodný text ve stylu Lorem Ipsum v češtině a umožňuje uživateli uložit vygenerovaný text do souboru.
 
-## Použití
+## Jak používat
 
-1. Spusťte skript v Pythonu (verze 3.x):
-    ```
-    python lorem_ipsum_generator.py
-    ```
+1. Spusťte skript v Pythonu pomocí příkazu:
+   ```bash
+   python generuj_lorem_ipsum.py
+Zadávejte počet odstavců a počet slov na odstavec, jak je požadováno.
 
-2. Zadejte počet odstavců a počet slov na odstavec, když je to požadováno.
+Vygenerovaný text bude zobrazen na obrazovce a zároveň uložen do souboru lorem_ipsum.txt ve stejném adresáři.
 
-3. Vygenerovaný text bude zobrazen na obrazovce a uložen do souboru 'lorem_ipsum.txt'.
+Popis kódu
+generuj_slovo(): Funkce generuje náhodné slovo s určeným počtem slabik.
 
-## Konfigurace
+generuj_lorem_ipsum(): Funkce generuje text Lorem Ipsum s požadovaným počtem odstavců a slov na odstavec.
 
-Váhy jednotlivých písmen jsou definovány v proměnné `vahy_pismen` ve skriptu. Můžete upravit tyto váhy podle potřeby.
+uloz_do_souboru(text, nazev_souboru='lorem_ipsum.txt'): Funkce ukládá vygenerovaný text do souboru.
 
-```python
-vahy_pismen = {
-    'a': 8.61, 'á': 1.46, 'b': 2.52, ...
-    # Další písmena a jejich váhy
-}
-Příklad použití ve vašem kódu
+Příklad použití
 python
 Copy code
-from lorem_ipsum_generator import generuj_lorem_ipsum, uloz_do_souboru
-
 vygenerovany_text = generuj_lorem_ipsum()
 
 print("\nVygenerovaný text:\n")
